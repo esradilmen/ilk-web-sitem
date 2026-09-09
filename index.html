@@ -9,15 +9,10 @@
 <body>
 
     <header>
-        <h1>Merhaba, Ben Esra!</h1>
-        <p>Sıfırdan özel web sitesi geliştirme yolculuğum başladı.</p>
-    </header>
-
-    <header>
         <!-- Karanlık Mod Anahtarı -->
         <button id="themeToggle" class="theme-btn">🌙 Karanlık Mod</button>
         
-        <h1>Merhaba, Ben Web Geliştiricisiyim!</h1>
+        <h1>Merhaba, Ben Esra!</h1>
         <p>Sıfırdan özel web sitesi geliştirme yolculuğum başladı.</p>
     </header>
 
@@ -43,9 +38,41 @@
                     <p>C#, .NET Core, Entity Framework ve SQLite ile geliştirilmiş masaüstü arayüz uygulaması.</p>
                 </div>
             </div>
+
+            <!-- İletişim Formu Bölümü -->
+            <div class="contact-section">
+                <h3>İletişime Geçin</h3>
+                <form id="contactForm" action="https://formspree.io/f/mnpqoyyg" method="POST">
+                    <div class="form-group">
+                        <label for="name">Adınız Soyadınız</label>
+                        <input type="text" id="name" name="name" required placeholder="Adınızı giriniz">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="ornek@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Mesajınızı buraya yazınız..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="send-btn">Mesaj Gönder</button>
+                </form>
+            </div>
+
         </section>
     </main>
     
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+

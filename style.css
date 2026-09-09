@@ -214,3 +214,62 @@ body.dark-mode .form-group input:focus,
 body.dark-mode .form-group textarea:focus {
     border-color: #0d6efd;
 }
+
+/* ==========================================
+   Mobil Uyumluluk (Responsive Design)
+   ========================================== */
+
+/* Tablet ve Küçük Ekranlar (Maksimum 768px genişlik) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 15px;
+        margin: 10px auto;
+        border-radius: 12px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-card {
+        padding: 12px;
+    }
+
+    .send-btn, #mesajButonu {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Küçük Ekranlı Cep Telefonları (Maksimum 480px genişlik) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .contact-section h3, .projects-section h3 {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
